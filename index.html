@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>实验三</title>
+		<style>
+			#in {
+				width: 800px;
+				height: 300px;
+				border: 10px dotted black ;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 150px;
+				text-align: center;
+				font-size: 60px;
+			}
+			#out {
+				width: 1200px;
+				height: 600px;
+				border: 15px solid green;
+				position: relative;
+				margin: auto;
+			}
+			@keyframes myfirst {
+				0% {
+					background-color: red;
+					left: 80px;
+					bottom: 600px;
+				}
+
+				25% {
+					background-color: blue;
+					left: 1050px;
+					bottom: 600px;
+				}
+				
+				50% {
+					background-color: plum;
+					left: 1050px;
+					bottom: 150px;
+				}
+
+				75% {
+					background-color: green;
+					left: 80px;
+					bottom: 150px;
+				}
+
+				100% {
+					background-color: red;
+					left: 80px;
+					bottom: 600px;
+				}
+			}
+			#myfirst {
+				width: 130px;
+				height: 130px;
+				position: relative;
+				animation: myfirst 10s;
+				animation-iteration-count: infinite;
+			}
+			#myfirst:hover{
+					animation-play-state:paused;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div id="out">
+			<div id="in">
+				跑动的汽车
+			</div>
+		</div>
+		<img id="myfirst" src="./che.png">
+	</body>
+</html>
